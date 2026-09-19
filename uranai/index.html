@@ -653,7 +653,7 @@ function shareResult(containerId){
   const container = document.getElementById(containerId);
   if(!container) return;
   const text = container.innerText.replace(/\s{2,}/g," ").trim();
-  const siteUrl = ""; // 公開後にここにサイトURLを入れてください（例: https://your-site.example）
+  const siteUrl = "https://haruki8513-alt.github.io/uranai-app/"; // 公開後にここにサイトURLを入れてください（例: https://your-site.example）
   const tweet = text + (siteUrl ? ("\n" + siteUrl) : "");
   const url = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(tweet);
   window.open(url, "_blank");
